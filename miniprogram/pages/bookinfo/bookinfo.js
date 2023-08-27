@@ -96,10 +96,13 @@ Page({
       })
       return ;
     }
+    // use you own isbn api, my api come from https://www.jumdata.com/product/code/isbn_query
+    console.log("use you own isbn api, my api come from https://www.jumdata.com/product/code/isbn_query, change the ***")
+    console.log("使用你自己的ISBN识别api，我的api来源于 https://www.jumdata.com/product/code/isbn_query，使用请修改***内容")
     var time = new Date();
     var timestamp = time.getTime();
-    var appid = "f4LzVz5mVRrR4MoW";
-    var appsecret = "f4LzVz5mVRrR4MoWqO3B9hCHFWd9UjBx";
+    var appid = "***"; //your own isbn appid
+    var appsecret = "***"; //your own isbn appsecret
     var signstr = appid + appsecret + timestamp;
     var productCode = "isbn_query";
     var sign = '';
