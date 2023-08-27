@@ -1,0 +1,14 @@
+.sell{ background: #d0d9ff; }
+.buy{ background: #cfd8dc; }
+.sell .textCont .postinfo{ color: #9575cd; }
+.buy .textCont .postinfo{ color: #7986cd; }
+
+.bookInfo{ height: 200rpx; width: 100%; color: var(--global-font-color-g); border-bottom: 1rpx solid var(--global-font-color-l); display: flex; align-items: center; border-radius: 20rpx; margin-top: 10rpx; padding-left: 16rpx; box-sizing: border-box; }
+.bookInfo .cover{ width: 160rpx; height: 160rpx; }
+.bookInfo .coverPic{ width: 100%; height: 100%; }
+.bookInfo .textCont{ height: 160rpx; width: 500rpx; font-size: 22rpx; margin-left: 20rpx; display: flex; flex-direction: column; justify-content: space-around; }
+.bookInfo .textCont .title{ white-space: nowrap; overflow-x: scroll; }
+.bookInfo .textCont .title::-webkit-scrollbar{ display: none; }
+.bookInfo .textCont .postinfo{ display: flex; justify-content: space-between;  }
+.bookInfo .textCont .postinfo .typePrice{ display: flex; align-items: center; }
+.bookInfo .textCont .postinfo .typePrice .avatar{ width: 30rpx; height: 30rpx; border-radius: 15rpx; margin-right: 10rpx; }

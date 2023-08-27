@@ -1,0 +1,6 @@
+<view class="contentBox container" wx:for="{{usagePrivacy}}" wx:key="index" >
+  <view class="title" >{{item.title}}</view>
+  <rich-text class="richText" nodes="{{item.richText}}" />
+</view>
+
+<logoFooter />

@@ -1,0 +1,52 @@
+<view class="userInfo">
+  <view class="userAvatar">
+    <image class="avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"/>
+  </view>
+  <view class="userCont">
+    <view class="nickName">{{userInfo.nickName}}</view>
+    <view class="msgTool">{{userInfo.msgTool}}</view>
+    <view class="userSchool">
+      <image class="icon" src="../../images/icon/locked.png" mode="heightFix"/>重庆邮电大学
+    </view>
+  </view>
+</view>
+
+<view class="funcCell">
+  <view class="cellBox">
+
+    <navigator  class="cell" wx:for="{{funcList}}" wx:key="index" url="{{item.url}}" >
+      <view class="title" >
+        <image class="icon" src="{{item.iconUrl}}" mode="heightFix"/>{{item.title}}
+      </view>
+      <view class="more" >
+        ...
+      </view>
+    </navigator>
+
+    <view class="useTip">- 阅读公告以了解隐私政策 -</view>
+
+    <view class="cellBtn">
+      <button class="btn" type="primary" open-type="contact">
+        <image class="icon" src="../../images/icon/cantact.png" mode=""/>客服
+      </button>
+      <button class="btn" type="primary" open-type="feedback">
+        <image class="icon" src="../../images/icon/feedback.png" mode=""/>反馈
+      </button>
+    </view>
+  </view>
+
+</view>
+
+<view class="loginBtn">
+  <button wx:if="{{signFlag!=true}}" class="btn" bind:tap="getSign" type="primary">注册</button>
+  <block wx:else>
+    <button wx:if="{{loginFlag==true}}" class="btn" bind:tap="getLogout" type="primary">
+      退出登录
+    </button>
+    <button wx:else class="btn" bind:tap="getLogin" type="primary">
+      登录
+    </button>
+  </block>
+</view>
+
+<logoFooter />

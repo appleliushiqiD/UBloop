@@ -1,0 +1,43 @@
+<block wx:if="{{loginFlag==true||openType=='sign'}}">
+  <form wx:if="{{openType!='watch'}}" bindsubmit="submitInfo">
+    <view class="userInfo">
+      <button class="userAvatar" open-type="chooseAvatar" bindchooseavatar="chooseAvatar">
+        <image class="avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"/>
+      </button>
+      <view class="userCont">
+        <input class="nickName" name="nickname" type="nickname" bindnicknamereview="checkName" maxlength="9" value="{{userInfo.nickName}}" />
+        <input class="msgTool" name="msgtool" type="text" maxlength="14" bindinput="changeMsg" value="{{userInfo.msgTool}}" />
+        <view class="userSchool">
+          <image class="icon" src="../../images/icon/locked.png" mode="heightFix"/>重庆邮电大学
+        </view>
+      </view>
+    </view>
+    <view class="changeTip">- 点击对应位置更改内容 -</view>
+    <view class="saveBtn" >
+      <button class="btn" wx:if="{{openType!='watch'}}" disabled="{{!(avatarChecker&&nicknameChecker&&!sameMsgTool)}}" type="primary" form-type="submit" >保存内容</button>
+    </view>
+  </form>
+
+  <view wx:if="{{openType=='watch'}}" class="userInfo">
+    <view class="userAvatar">
+      <image class="avatar" src="{{otherInfo.avatarUrl}}" mode="aspectFill"/>
+    </view>
+    <view class="userCont">
+      <view class="nickName">{{otherInfo.nickName}}</view>
+      <view class="msgTool">{{otherInfo.msgTool}}</view>
+      <view class="userSchool">
+        <image class="icon" src="../../images/icon/locked.png" mode="heightFix"/>重庆邮电大学
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{openType!='sign'}}" class="rateBox container">
+    <view class="header">- 留言评价 -</view>
+    <view class="rateItem" >还没有内容</view>
+  </view>
+
+  <logoFooter />
+</block>
+<block wx:else>
+  <view class="notLoginTip">请先登录</view>
+</block>

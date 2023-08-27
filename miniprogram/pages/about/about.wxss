@@ -1,0 +1,24 @@
+.userInfo{ width: 100%; height: 300rpx; display: flex; justify-content: center; align-items: flex-end; padding-bottom: 60rpx;}
+.userAvatar{ width: 150rpx; height: 150rpx; border-radius: 50%; }
+.userAvatar .avatar{ width: 100%; height: 100%; border-radius: 50%; }
+.userCont{ width: 300rpx; height: 150rpx; color: var(--global-font-color-g); padding-left: 40rpx; display: flex; flex-direction: column; justify-content: space-between;}
+.userCont .userName{ font-size: 36rpx; color: #42bd41; }
+.userCont .msgTool{ height: 30rpx; font-size: 28rpx; }
+.userCont .userSchool{ height: 30rpx; font-size: 28rpx; display: flex; align-items: center;}
+.userCont .userSchool .icon{ height: 30rpx; }
+
+.funcCell{ padding: 0 50rpx 30rpx; }
+.funcCell .cellBox{ padding: 40rpx; box-sizing: border-box;  background: #cfd8dc; border-radius: 50rpx;}
+.funcCell .cellBox .cell{ width: 100%; height: 100rpx; color: var(--global-font-color-g); font-size: 34rpx; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; border-bottom: 1rpx solid var(--global-backgroud-color); position: relative; }
+.funcCell .cellBox .cell .title{ height: 60rpx; display: flex; align-items: center; }
+.funcCell .cellBox .cell .icon{ height: 30rpx; width: 30rpx; padding: 4rpx;}
+
+
+.funcCell .cellBox .useTip{ font-size: 28rpx; color: var(--global-font-color-l); display: flex; padding: 30rpx 0; justify-content: center; box-sizing: border-box; }
+
+.funcCell .cellBox .cellBtn{ width: 100; height: 100rpx; font-size: 30rpx; display: flex; padding: 20rpx 0 10rpx; }
+.funcCell .cellBox .cellBtn .btn{ width: 260rpx; height: 100%; color: var(--global-font-color-g); display: flex; justify-content: center; align-items: center; border-radius: 50rpx; }
+.funcCell .cellBox .cellBtn .icon{ height: 30rpx; width: 30rpx; padding: 4rpx; }
+
+.loginBtn{ width: 100%; height: 100rpx; padding: 10rpx 0 20rpx; }
+.loginBtn .btn{ width: 300rpx; height: 100%; display: flex; justify-content: center; align-items: center; border-radius: 50rpx; }

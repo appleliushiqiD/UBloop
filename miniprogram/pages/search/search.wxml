@@ -1,0 +1,35 @@
+<view class="searchBox">
+  <view class="searchCon">
+    <view class="tip">ISBN/书名</view>
+    <view class="inputBox">
+
+      <image class="icon" src="../../images/icon/search.png" mode="heightFix"/>
+      <input class="searchInput" value="{{inputVal}}" type="text" focus	maxlength="20" confirm-type="search" bindinput="onInput" bindconfirm="getSearch" placeholder="ISBN需完整13位" 	placeholder-style="color:#90a4ae;font-size:30rpx;"/>
+      <image wx:if="{{showClean}}" class="cleanIcon" bindtap="cleanInput" src="../../images/icon/cancel.png" mode="heightFix"/>
+
+    </view>
+  </view>
+</view>
+
+<view class="history">
+  <view class="historyTip" bindtap="cleanHistory">
+    <view class="tip">- 搜索历史</view>
+    <image class="icon" src="../../images/icon/cleanHistory.png" /> -
+  </view>
+
+  <scroll-view class="historyCon" scroll-y enable-flex>
+    <view class="hisContBox" wx:for="{{searchHistory}}" wx:key="index" bindtap="reSearch" data-value="{{item}}">
+      {{item}}
+    </view>
+  </scroll-view>
+</view>
+
+
+<view class="showSearch  container">
+  <view class="headTip">- 搜索结果 -</view>
+  <navigator class="bookItem" wx:for="{{searchResult}}" wx:key="index" url="{{'../../pages/bookinfo/bookinfo?isbn='+item.isbn}}">
+    <bookInfo bookInfo="{{item}}" />
+  </navigator>
+</view>
+
+<logoFooter />

@@ -1,0 +1,9 @@
+page{
+  --global-backgroud-color : #eceff1;
+  --global-font-color-g : #546e7a;
+  --global-font-color-l : #90a4ae;
+  --global-part-line : #cfd8dc;
+  background: var(--global-backgroud-color);
+}
+
+.container{ padding: 0 20rpx; box-sizing: border-box;}

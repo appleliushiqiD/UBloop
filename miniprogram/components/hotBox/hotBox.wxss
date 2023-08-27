@@ -1,0 +1,9 @@
+.hotBox .header{ height: 80rpx; display: flex; justify-content: space-between; padding: 20rpx 0 15rpx; box-sizing: border-box; border-bottom: 1rpx solid var(--global-part-line); }
+.hotBox .header .title{ font-size: 34rpx; color: var(--global-font-color-g); }
+.hotBox .header .title .icon{ height: 30rpx; }
+
+.content{ font-size: 28rpx; color: var(--global-font-color-g); align-items: center; }
+.content .contItem{ height: 70rpx; padding: 0 10rpx; display: flex; justify-content: space-between; align-items: center; border-bottom: 1rpx solid var(--global-part-line); }
+.content .contItem .num{ font-size: 24rpx; color: #ba68c8; }
+
+

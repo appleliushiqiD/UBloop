@@ -1,0 +1,61 @@
+<view class="detailBox">
+  <view class="mainBox">
+    <view class="coverBox">
+      <image class="coverPic" src="{{bookDetail.img}}" mode="aspectFit"/>
+    </view>
+    <view class="infoBox">
+      <view class="title">{{bookDetail.title}}</view>
+      <view class="author">作者：{{bookDetail.author}}</view>
+      <view class="price">定价:{{bookDetail.price}}</view>
+      <view class="publish">{{bookDetail.publisher}} / {{bookDetail.pubDate}}</view>
+    </view>
+  </view>
+  <view class="descBox">
+    <view class="gist">{{bookDetail.gist}}</view>
+    <view class="postBtn" bind:tap="tapPost">
+      <image class="icon"  src="../../images/icon/post.png" mode="aspectFit"/>发布我的
+    </view>
+  </view>
+</view>
+
+<page-container show="{{showPostPage}}" round bind:clickoverlay="{{clickHide}}" >
+  <view class="popPage container" >
+    <view class="header">完善发布信息</view>
+    <view class="bookInfo">
+      <view class="title">书名：{{bookDetail.title}}</view>
+      <view class="price">定价：{{bookDetail.price}}</view>
+    </view>
+    <form class="postForm" bindsubmit="subPostInfo">
+      <radio-group class="postType" name="postType" value="" bindchange="">
+        发布类型：
+        <radio class="sellSelecter" value="sell" >出售</radio>
+        <radio class="buySelecter" value="buy" checked="{{true}}" >求购</radio>
+      </radio-group>
+      <view class="postPrice" >
+        价格：<input type="digit" value="" name="postPrice" placeholder="输入价格" placeholder-class="priceHolder" bindinput="chPrice" maxlength="8" />
+        <view class="resultPrice">结果：{{inputVal}}</view>
+      </view>
+      <view class="postTime" >发布时间：{{postTime}}</view>
+      <button class="subBtn" form-type="submit" type="primary" >发布</button>
+    </form>
+  
+    <logoFooter />
+  </view>
+</page-container>
+
+<view class="posted">
+  <view class="header">
+    - 需求发布 -
+    <picker class="selector" mode="multiSelector" value="{{selectorIndex}}" range="{{selectorName}}" bindchange="chSelector" >
+      <view>{{selectorName[0][selectorIndex[0]]}}-{{selectorName[1][selectorIndex[1]]}}</view>
+    </picker>
+  </view>
+  <scroll-view class="postedBox container" scroll-y>
+    <postedBook wx:for="{{postedBooks}}" wx:key="index" postInfo="{{item}}" bind:tap="tapPoster" data-userinfo="{{item.userinfo}}" />
+  </scroll-view>
+  
+</view>
+
+<logoFooter />
+
+

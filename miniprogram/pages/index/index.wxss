@@ -1,0 +1,10 @@
+.header{ width:100%; height: 100rpx; position: sticky; top: 0; z-index: 99; display: flex; justify-content: space-between; align-items: center; padding: 0 20rpx;box-sizing: border-box; background: var(--global-backgroud-color);} 
+.header .logo{ height: 100%; }
+.header .search{ height: 60%; }
+.header .logo .logoPic{ height: 100%; }
+.header .search .searchPic{ height: 100%; }
+
+.swiperBox{ width:100%; height: 400rpx; display: flex; justify-content: center; }
+.swiperBox .swiper{ width: 600rpx; height: 400rpx; }
+.swiperBox .swiper .swiperPic{ width: 100%; height: 100%; }
+

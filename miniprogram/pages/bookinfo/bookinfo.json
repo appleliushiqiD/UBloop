@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "书籍详情",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "postedBook": "../../components/postedBook/postedBook"
+  }
+}

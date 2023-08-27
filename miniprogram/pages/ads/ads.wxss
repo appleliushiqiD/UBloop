@@ -1,0 +1,8 @@
+.header{ width: 100%; position: sticky; top: 0; }
+.headerPic{ width: 100%; }
+
+.contBox{ background: var(--global-backgroud-color); border-radius: 50rpx 50rpx 0 0; transform: translateY(-70rpx); min-height: 1000rpx;}
+.contHeader{ padding: 40rpx 0 30rpx; }
+.contHeader .title{ color: #fb8c00; font-size: 36rpx; line-height: 60rpx; text-align: center; }
+
+.richText{ color: var(--global-font-color-g); }

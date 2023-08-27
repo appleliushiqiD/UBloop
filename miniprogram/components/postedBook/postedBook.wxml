@@ -1,0 +1,17 @@
+<view class="container bookInfo {{ postInfo.postType=='sell' ? 'sell' : 'buy' }}" >
+  <view class="cover">
+    <image class="coverPic" src="{{postInfo.bookinfo[0].img}}" mode="aspectFit"/>
+  </view>
+  <view class="textCont">
+    <view class="title">{{postInfo.bookinfo[0].title}}</view>
+    <view class="author">作者：{{postInfo.bookinfo[0].author}}</view>
+    <view class="pressInfo">{{postInfo.bookinfo[0].publisher}} / {{postInfo.bookinfo[0].pubDate}}</view>
+    <view class="postinfo">
+      <view class="typePrice">
+        <image wx:if="{{postInfo.userinfo[0]}}" class="avatar" src="{{postInfo.userinfo[0].avatarUrl}}" mode="aspectFill"/>
+        {{ postInfo.postType=='sell' ? '出售' : '求购' }} 价格：{{postInfo.postPrice}}
+      </view>
+      <view class="postTime">{{postInfo.postTime}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="header">
+  <image class="headerPic" src="cloud://cloud1-4g5g6kjfdf33b9c3.636c-cloud1-4g5g6kjfdf33b9c3-1319303691/ads/activation2Raw.jpg" mode="widthFix" />
+</view>
+
+<view class="contBox">
+
+  <view class="contHeader">
+    <view class="title">{{ads.title}}</view>
+  </view>
+
+  <view class="content container">
+    <rich-text class="richText" nodes="{{ads.richText}}"/>
+  </view>
+</view>
+
+<logoFooter />

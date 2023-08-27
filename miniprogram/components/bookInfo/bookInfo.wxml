@@ -1,0 +1,11 @@
+<view class="container bookInfo" >
+  <view class="cover">
+    <image class="coverPic" src="{{bookInfo.img}}" mode="aspectFit"/>
+  </view>
+  <view class="textCont">
+    <view class="title">{{bookInfo.title}}</view>
+    <view class="author">作者：{{bookInfo.author}}</view>
+    <view wx:if="{{bookInfo.translator==''}}" class="translator">译者：{{bookInfo.translator}}</view>
+    <view class="pressInfo">{{bookInfo.publisher}} / {{bookInfo.pubDate}}</view>
+  </view>
+</view>

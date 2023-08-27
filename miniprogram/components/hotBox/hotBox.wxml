@@ -1,0 +1,14 @@
+<view class="hotBox">
+  <view class="header">
+    <view class="title">
+      <image class="icon" src="../../images/icon/fire.png" mode="heightFix"/> {{myTitle}}
+    </view>
+  </view>
+
+  <view class="content" >
+    <view class="contItem" wx:for="{{hotPosts}}" wx:key="index">
+      <view class="title">{{index+1}}. {{item.title}}</view>
+      <view class="num">{{item.count}}</view>
+    </view>
+  </view>
+</view>

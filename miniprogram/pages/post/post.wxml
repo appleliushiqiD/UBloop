@@ -1,0 +1,35 @@
+<view class="search">
+  <navigator class="searchBox" url="../../pages/search/search">
+    <image class="icon" src="../../images/icon/search.png" mode="heightFix"/>搜索
+  </navigator>
+</view>
+
+<view class="ads">
+  <navigator class="adsNav" url="/pages/ads/ads">
+    <image class="adsPic" src="{{ads.picUrl}}" mode="aspectFill"/>
+    <view class="title">{{ads.title}}...</view>
+  </navigator>
+</view>
+
+<view class="myPosted">
+  <view class="header">- 我的发布 -</view>
+  <view wx:if="{{!loginFlag}}" class="noLoginTip">你还没有登录</view>
+  <scroll-view class="postedBox container" scroll-y>
+    <navigator wx:for="{{myPosteds}}" wx:key="index" url="{{'../../pages/bookinfo/bookinfo?isbn='+item.isbn}}">
+      <postedBook postInfo="{{item}}" />
+    </navigator>
+
+  </scroll-view>
+  
+</view>
+
+
+<view class="postBtn">
+  <button class="btn" bind:tap="scanIsbn">
+    <image class="icon" src="../../images/icon/carmera.png" mode="heightFix"/>发布内容
+  </button>
+</view>
+
+<logoFooter />
+
+

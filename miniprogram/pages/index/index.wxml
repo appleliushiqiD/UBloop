@@ -1,0 +1,35 @@
+<view class="header">
+
+  <view class="logo">
+    <image class="logoPic" src="../../images/UBloop-g.png" mode="heightFix"/>
+  </view>
+
+  <navigator url="../../pages/search/search" class="search">
+    <image class="searchPic" src="../../images/search.png" mode="heightFix"/>
+  </navigator>
+
+</view>
+
+<view class="swiperBox">
+  <swiper class="swiper"	indicator-dots	indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#42bd41" autoplay	interval="3000"	circular easing-function="linear">
+    <swiper-item class="swiperItem">
+      <image class="swiperPic" src="cloud://cloud1-4g5g6kjfdf33b9c3.636c-cloud1-4g5g6kjfdf33b9c3-1319303691/indexSwiper/booksSwiper3.jpg" mode="widthFix"/>
+    </swiper-item>
+    <swiper-item  class="swiperItem">
+      <image class="swiperPic" src="cloud://cloud1-4g5g6kjfdf33b9c3.636c-cloud1-4g5g6kjfdf33b9c3-1319303691/indexSwiper/booksSwiper4.jpg" mode="widthFix"/>
+    </swiper-item>
+    <swiper-item class="swiperItem">
+      <image class="swiperPic" src="cloud://cloud1-4g5g6kjfdf33b9c3.636c-cloud1-4g5g6kjfdf33b9c3-1319303691/indexSwiper/booksSwiper2.jpg" mode="widthFix"/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="hotNeeds container">
+  <hotBox myTitle="求购榜单" moreUrl="../../pages/toppost/toppost?type=buy" hotPosts="{{hotSellPosts}}" />
+</view>
+
+<view class="hotSells container">
+  <hotBox myTitle="热售榜单" moreUrl="../../pages/toppost/toppost?type=sell" hotPosts="{{hotBuyPosts}}" />
+</view>
+
+<logoFooter />

@@ -1,0 +1,51 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages": [
+    "pages/index/index",
+    "pages/post/post",
+    "pages/about/about",
+
+    "pages/search/search",
+    "pages/bookinfo/bookinfo",
+    "pages/ads/ads",
+
+    "pages/aboutme/aboutme",
+    "pages/mypost/mypost",
+    "pages/usage/usage"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#90a4ae",
+    "navigationBarTitleText": "UBloop"
+  },
+  "tabBar": {
+    "selectedColor" : "#42bd41",
+    "backgroundColor": "#eceff1",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/book.png",
+        "selectedIconPath": "./images/book-s.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "发布",
+        "iconPath": "./images/scan.png",
+        "selectedIconPath": "./images/scan-s.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "./images/about.png",
+        "selectedIconPath": "./images/about-s.png"
+      }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "logoFooter" : "./components/logoFooter/logoFooter"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

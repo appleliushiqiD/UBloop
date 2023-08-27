@@ -1,0 +1,3 @@
+.contentBox{ padding: 80rpx 40rpx; }
+.contentBox .title{ font-size: 34rpx; color: #42bd41; text-align: center; padding-bottom: 40rpx;}
+.contentBox .richText{ color: var(--global-font-color-g); }

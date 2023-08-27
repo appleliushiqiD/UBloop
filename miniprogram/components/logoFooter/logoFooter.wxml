@@ -1,0 +1,11 @@
+<view class="footer">
+  <view class="logoName">
+    <text class="u">U</text>
+    <text class="b">B</text>
+    <text class="l">l</text>
+    <text class="o">o</text>
+    <text class="oo">o</text>
+    <text class="p">p</text>
+  </view>
+  <view class="desc">- 二手书信息收集发布小程序 -</view>
+</view>

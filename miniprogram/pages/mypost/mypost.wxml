@@ -1,0 +1,43 @@
+<block wx:if="{{loginFlag==true}}">
+  <view class="header">
+    <image class="headerPic" src="cloud://cloud1-4g5g6kjfdf33b9c3.636c-cloud1-4g5g6kjfdf33b9c3-1319303691/ads/adsBg1.jpg" mode="widthFix" />
+  </view>
+  <view class="contBox container">
+    <view class="contHeader">- 我的发布 -</view>
+    <view class="postBox">
+      <postedBook bind:tap="tapPost" data-info="{{item}}" wx:for="{{myPosteds}}" wx:key="index" postInfo="{{item}}" />
+    </view>
+  </view>
+
+  <page-container show="{{showPostPage}}" round bind:clickoverlay="{{clickHide}}" >
+    <view class="popPage container" >
+      <view class="header">更新发布信息</view>
+      <view class="bookInfo">
+        <view class="title">书名：{{tapPosted.bookinfo[0].title}}</view>
+        <view class="price">定价：{{tapPosted.bookinfo[0].price}}</view>
+      </view>
+      <form class="postForm" bindsubmit="subPostInfo">
+        <radio-group class="postType" name="postType" value="" bindchange="">
+          发布类型：
+          <radio class="sellSelecter" value="sell" checked="{{tapPosted.postType=='sell'}}" >出售</radio>
+          <radio class="buySelecter" value="buy" checked="{{tapPosted.postType=='buy'}}" >求购</radio>
+        </radio-group>
+        <view class="postPrice" >
+          价格：<input type="digit" value="{{inputVal}}" name="postPrice" placeholder="输入价格" placeholder-class="priceHolder" bindinput="chPrice" maxlength="8" />
+          <view class="resultPrice">结果：{{inputVal}}</view>
+        </view>
+        <view class="postTime" >更新时间：{{postTime}}</view>
+        <button class="subBtn" form-type="submit" type="primary" >更新</button>
+      </form>
+      
+      <button class="deleteBtn" type="warn" bind:tap="deletePost" >删除</button>
+
+      <logoFooter />
+    </view>
+  </page-container>
+
+  <logoFooter />
+</block>
+<block wx:else>
+  <view class="notLoginTip">请先登录</view>
+</block>

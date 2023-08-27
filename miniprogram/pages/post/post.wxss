@@ -1,0 +1,20 @@
+.search{ width: 100%; height: 100rpx;display: flex; justify-content: center; align-items: center; background: #e7e9fd; position: sticky; top: 0; z-index: 99; }
+.search .searchBox{ width: 95%; height: 60rpx; background: white; border-radius: 30rpx; display: flex; justify-content: center; align-items: center; }
+.search .searchBox .icon{ height: 30rpx; padding-right: 8rpx; }
+
+.ads{ width: 100%; height: 400rpx; }
+.adsNav{ width: 100%; height: 100%; position: relative;}
+.adsNav .adsPic{ width: 100%; height: 100%;}
+.adsNav .title{ width: 100%; font-size: 28rpx; color: #fb8c00; position: absolute; bottom: 0; left: 0; text-align: right; padding: 10rpx;  box-sizing: border-box; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); }
+
+.myPosted .header{ color: var(--global-font-color-l); line-height: 80rpx; text-align: center; }
+.myPosted .noLoginTip{ color: var(--global-font-color-l); text-align: center; }
+.myPosted .postedBox{ min-height: 600rpx; max-height: 800rpx; }
+
+.postBtn{ width: 100%; height: 100rpx; position: sticky; bottom: 20rpx; z-index: 99; display: flex; justify-content: center; }
+.postBtn .btn{ all:initial; width: 300rpx; height: 100%; color: #757575; background: linear-gradient(  to right bottom, #f06292, #7986cd); display: flex; justify-content: center; align-items: center; border-radius: 50rpx;}
+.postBtn .btn .icon{ height: 40rpx; padding-right: 8rpx; }
+
+
+
+
