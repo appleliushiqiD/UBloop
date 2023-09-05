@@ -6,5 +6,5 @@
 [B站](https://www.bilibili.com/video/BV1nu4y1v79s/)
 
 ### ISBN api
-ISBN 识别 api 来源于 https://www.jumdata.com/product/code/isbn_query
+ISBN 识别 api 来源于 [ISBN书号查询 - 聚美智数](https://www.jumdata.com/product/code/isbn_query)，实名认证会有50次的免费调用
 使用时请修改 miniprogram/pages/bookinfo/bookinfo.js 中的 getBookFromApi 方法
