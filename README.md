@@ -53,7 +53,7 @@ ISBN 识别 api 来源于 [ISBN书号查询 - 聚美智数](https://www.jumdata.
 以下平台提供前期调研的项目参考：
 - steam市场
 - 网易BUFF
-- 校园淘书包（微信小程序）
+- 校园淘书宝（微信小程序）
 
 #### 功能需求
 
@@ -96,6 +96,7 @@ ISBN 识别 api 来源于 [ISBN书号查询 - 聚美智数](https://www.jumdata.
  
 #### 一些内容参考对照
 
-1. 详情页4：已发布内容的价格与数量、价格趋势：参考 steam市场 的商品内容
-![steam市场样例1](./sample/images/steamMarket1.png)
-![steam市场样例1](./sample/images/steamMarket2.png)
+1. 详情页4：已发布内容的价格与数量、价格趋势：参考 steam市场 的商品内容  
+![steam市场样例1](./sample/images/steamMarket1.png)  
+![steam市场样例1](./sample/images/steamMarket2.png)  
+
