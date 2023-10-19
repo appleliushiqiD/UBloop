@@ -96,7 +96,7 @@ ISBN 识别 api 来源于 [ISBN书号查询 - 聚美智数](https://www.jumdata.
  
 #### 一些内容参考对照
 
-1. 详情页4：已发布内容的价格与数量、价格趋势：参考 steam市场 的商品内容  
+1. 详情页4：已发布内容的价格与数量、价格趋势（参考 steam市场 的商品内容）  
 ![steam市场样例1](./sample/images/steamMarket1.png)  
 ![steam市场样例1](./sample/images/steamMarket2.png)  
 
